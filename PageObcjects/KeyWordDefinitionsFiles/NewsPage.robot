@@ -3,7 +3,6 @@ Library   Selenium2Library
 Resource    ../Locators/Locators.robot
 
 *** Keywords ***
-
 Select First Article
     Run Keyword and Ignore Error    Scroll Element Into View    ${FIRST_ARTICLE_LINK}
     Wait Until Element Is Visible    ${FIRST_ARTICLE_LINK}    10s

@@ -2,12 +2,7 @@
 Library   Selenium2Library
 Resource    ../Locators/Locators.robot
 
-*** Variables ***
-
-
-
 *** Keywords ***
-
 Go Back Page   
     Go Back
 

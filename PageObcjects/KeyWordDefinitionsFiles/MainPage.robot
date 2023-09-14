@@ -4,14 +4,11 @@ Library    String
 Resource    ../Locators/Locators.robot
 
 *** Variables ***
-
 ${CONVERTED_SUBSTRING_DATE}
 ${COMPUTER_DATE_DAY} 
 ${USER_DATE}
 
-
 *** Keywords ***
-
 Date Choose By User
     [Arguments]    ${USER_DATE}
     Set Suite Variable    ${USER_DATE}

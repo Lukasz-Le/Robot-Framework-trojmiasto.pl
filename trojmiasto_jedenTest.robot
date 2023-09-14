@@ -6,16 +6,18 @@ Resource    ../Test1/PageObcjects/KeyWordDefinitionsFiles/NewsPage.robot
 
 
 *** Variables ***
-${ADRESS}    https://trojmiasto.pl
-${BROWSER}   Chrome
+#${ADRESS}    #https://trojmiasto.pl
+#${BROWSER}   #Chrome    
 
 *** Keywords ***
-
-
+Open Page
+    [Arguments]    ${ADRESS}  ${BROWSER}         
+    Open Browser  ${ADRESS}  ${BROWSER}  
 *** Test Cases ***
 
 Check Page
-    Open Browser    ${ADRESS}      ${BROWSER}
+    #Open Browser    ${ADRESS}      ${BROWSER}
+    Open Page   https://trojmiasto.pl    chrome
     CommonFunctionality.Page Cookies
     Page Should Contain    trojmiasto.pl
     

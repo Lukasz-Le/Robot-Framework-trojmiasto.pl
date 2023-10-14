@@ -1,10 +1,10 @@
 *** Settings ***
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/ArticlesTitles.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/CommonFunctionality.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/MainPage.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/NewsPage.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/PKPTrojmiastoPage.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/KoleoPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/ArticlesTitles.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/CommonFunctionality.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/MainPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/NewsPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/PKPTrojmiastoPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/KoleoPage.robot
 
 *** Keywords ***
 Open Page

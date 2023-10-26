@@ -1,12 +1,12 @@
 *** Settings ***
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/ArticlesTitles.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/CommonFunctionality.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/MainPage.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/NewsPage.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/PkpTrojmiastoPage.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/RealEstate.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/Aftermarket.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/AftermarketTitle.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/ArticlesTitles.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/CommonFunctionality.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/MainPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/NewsPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/PkpTrojmiastoPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/RealEstate.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/Aftermarket.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/AftermarketTitle.robot
 
 *** Keywords ***
 Open Page
@@ -23,5 +23,6 @@ Real Estate Search
     RealEstate.Choose real estate market
     Aftermarket.Real Estate Aftermarket   Mieszkanie    # enter the type of property
     AftermarketTitle.Download First Aftermarket Title
+    [Teardown]    Close Browser
     
     

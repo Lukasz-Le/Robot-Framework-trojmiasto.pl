@@ -1,8 +1,8 @@
 *** Settings ***
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/ArticlesTitles.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/CommonFunctionality.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/MainPage.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/NewsPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/ArticlesTitles.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/CommonFunctionality.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/MainPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/NewsPage.robot
  
 *** Keywords ***
 Open Page
@@ -22,7 +22,7 @@ Compare Date trojmiasto.pl and computer date
     Should Be Equal As Integers    ${CONVERTED_SUBSTRING_DATE}    ${COMPUTER_DATE_DAY}
     
 Compare Date trojmiasto.pl and User Date
-    MainPage.Date Choose By User   3
+    MainPage.Date Choose By User   26
     Should Be Equal As Integers    ${CONVERTED_SUBSTRING_DATE}     ${USER_DATE}  
     
 Name Day
@@ -35,6 +35,6 @@ Articles
     CommonFunctionality.Go Back Page
     NewsPage.Select Third Article
     ArticlesTitles.Download Third Article Title
-    [Teardown]
+    [Teardown]    Close Browser
        
     

@@ -1,10 +1,10 @@
 *** Settings ***
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/ArticlesTitles.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/CommonFunctionality.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/MainPage.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/NewsPage.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/PKPTrojmiastoPage.robot
-Resource    ./PageObcjects/KeyWordDefinitionsFiles/KoleoPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/ArticlesTitles.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/CommonFunctionality.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/MainPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/NewsPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/PKPTrojmiastoPage.robot
+Resource    ./PageObjects/KeyWordDefinitionsFiles/KoleoPage.robot
 
 *** Keywords ***
 Open Page
@@ -21,3 +21,4 @@ Searching train conenctions
     MainPage.Open PKP Trojmiasto
     PKPTrojmiastoPage.Search for train connection    Gdańsk    Warszawa    #Write the departure and destination station
     KoleoPage.Enter Date and Check Connection    20.09.2023 09:00    #write date in format dd-mm-yyyy hh:mm date should not to be past date
+    [Teardown]    Close Browser

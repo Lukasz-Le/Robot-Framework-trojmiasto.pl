@@ -35,6 +35,6 @@ Articles
     CommonFunctionality.Go Back Page
     NewsPage.Select Third Article
     ArticlesTitles.Download Third Article Title
-    [Teardown]
+    [Teardown]     Close browser
        
     

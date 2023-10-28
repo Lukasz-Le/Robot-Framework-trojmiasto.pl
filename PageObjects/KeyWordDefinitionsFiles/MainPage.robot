@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *** Settings ***
 Library    Selenium2Library
 Library    String
@@ -41,48 +40,4 @@ Open PKP Trojmiasto
 Open Real Estate  
     Click Element     ${MORE}       
     Wait Until Element Is Visible    ${PKP}
-=======
-*** Settings ***
-Library    Selenium2Library
-Library    String
-Resource    ../Locators/Locators.robot
-
-*** Variables ***
-${CONVERTED_SUBSTRING_DATE}
-${COMPUTER_DATE_DAY} 
-${USER_DATE}
-
-*** Keywords ***
-Date Choose By User
-    [Arguments]    ${USER_DATE}
-    Set Suite Variable    ${USER_DATE}
-    Log To Console    dzień użytkownika - ${USER_DATE}
-
-Download and Write Name Day
-    ${NAME_DAY}=    Get Text    ${NAME_DAY_TROJMIASTOPL}
-    Log To Console    ${NAME_DAY}
-
-Download Date
-    Wait Until Element Is Visible    ${DATE_TROJMIASTOPL}    10s
-    ${DATE}=    Get Text    ${DATE_TROJMIASTOPL}
-    ${SUBSTRING_DATE} =    Get Substring    ${DATE}    0    2
-    ${CONVERTED_SUBSTRING_DATE}=    Convert To Integer   ${SUBSTRING_DATE}
-    Set Suite Variable     ${CONVERTED_SUBSTRING_DATE}
-    Log To Console    dzień z trojmiasto.pl - ${CONVERTED_SUBSTRING_DATE} 
-    ${COMPUTER_DATE_DAY}    Get Time    return day
-    Set Suite Variable     ${COMPUTER_DATE_DAY}
-    Log To Console    dzień z komputera - ${COMPUTER_DATE_DAY} 
-
-Open News
-    Click Element    ${NEWS} 
-
-Open PKP Trojmiasto
-    Click Element     ${MORE}       
-    Wait Until Element Is Visible    ${PKP}
-    Click Element     ${PKP}
-
-Open Real Estate  
-    Click Element     ${MORE}       
-    Wait Until Element Is Visible    ${PKP}
->>>>>>> 9d2e4465c1a8984342f536f50daa68f54b471de3
     Click Link  ${REAL_ESTATE}  

@@ -23,9 +23,6 @@ Real Estate Search
     RealEstate.Choose real estate market
     Aftermarket.Real Estate Aftermarket   Mieszkanie    # enter the type of property
     AftermarketTitle.Download First Aftermarket Title
-<<<<<<< HEAD
     [Teardown]    Close Browser
-=======
->>>>>>> 9d2e4465c1a8984342f536f50daa68f54b471de3
     
     

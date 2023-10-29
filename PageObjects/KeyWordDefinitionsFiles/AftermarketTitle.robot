@@ -5,7 +5,7 @@ Resource    ../Locators/Locators.robot
 *** Keywords ***
 
 Download First Aftermarket Title
-    ${VARIANT_RESULTS}    Run Keyword And Return Status    Wait Until Element Is Visible     ${RESULTS_VISIBILITY}      10s
+    ${VARIANT_RESULTS}    Run Keyword And Return Status    Wait Until Element Is Visible     ${RESULTS_VISIBILITY}      2s
     
     IF  ${VARIANT_RESULTS}
         ${NO_RESULTS_TEXT}    Get Text    ${RESULTS_VISIBILITY} 

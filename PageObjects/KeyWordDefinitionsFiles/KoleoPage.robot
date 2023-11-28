@@ -10,9 +10,9 @@ Enter Date and Check Connection
     ${SEARCH_BUTTON}     Get WebElement    ${SEARCH_BUTTON_KOLEO}
     Execute Javascript    arguments[0].click();    ARGUMENTS    ${SEARCH_BUTTON}
     Wait Until Page Contains    Połączenie    400s
-    ${VARIANT1}    Run Keyword And Return Status    Wait Until Element Is Visible     ${FIRST_TRAIN_TICKET_PRICE_KOLEO1}       1s
-    ${VARIANT2}    Run Keyword And Return Status    Wait Until Element Is Visible     ${FIRST_TRAIN_TICKET_PRICE_KOLEO2}      1s
-    ${VARIANT3}    Run Keyword And Return Status    Wait Until Element Is Visible    ${WARNING_KOLEO}    1s
+    ${VARIANT1}    Run Keyword And Return Status    Wait Until Element Is Visible     ${FIRST_TRAIN_TICKET_PRICE_KOLEO1}       5s
+    ${VARIANT2}    Run Keyword And Return Status    Wait Until Element Is Visible     ${FIRST_TRAIN_TICKET_PRICE_KOLEO2}      5s
+    ${VARIANT3}    Run Keyword And Return Status    Wait Until Element Is Visible    ${WARNING_KOLEO}    5s
 
     IF  ${VARIANT3}
         ${Warning}    Get Text    css=.search-results .day-connections .row .warning

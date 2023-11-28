@@ -19,6 +19,6 @@ Searching train conenctions
     CommonFunctionality.Page Cookies
     Page Should Contain    trojmiasto.pl
     MainPage.Open PKP Trojmiasto
-    PKPTrojmiastoPage.Search for train connection    Gdańsk    Warszawa    #Write the departure and destination station
-    KoleoPage.Enter Date and Check Connection    20.09.2023 09:00    #write date in format dd-mm-yyyy hh:mm date should not to be past date
+    PKPTrojmiastoPage.Search for train connection    Gdańsk    Toruń    #Write the departure and destination station
+    KoleoPage.Enter Date and Check Connection    11.10.2023 06:00    #write date in format dd-mm-yyyy hh:mm date should not to be past date
     [Teardown]    Close Browser

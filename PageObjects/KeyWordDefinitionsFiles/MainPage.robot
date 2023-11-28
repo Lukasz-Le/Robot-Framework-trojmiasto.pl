@@ -28,7 +28,7 @@ Download Date
     ${COMPUTER_DATE_DAY}    Get Time    return day
     Set Suite Variable     ${COMPUTER_DATE_DAY}
     Log To Console    dzień z komputera - ${COMPUTER_DATE_DAY} 
-
+    
 Open News
     Click Element    ${NEWS} 
 
